@@ -1,0 +1,121 @@
+/* 重置浏览器默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: url(../images/背景图.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+header#header {
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav#nav {
+    
+    color: #fff;
+}
+
+nav#nav .inner ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+nav#nav .inner ul li {
+    margin: 0 10px;
+}
+
+nav#nav .inner ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px
+}
+
+nav#nav .inner ul li a:hover {
+    text-decoration: underline;
+}
+
+#container_1, #container_2 #container_3{
+    padding: 2rem;
+    height: 300px;
+    background: #f4f4f4;
+    margin: 1rem 0;
+}
+/* 重置浏览器默认样式和基础样式保持不变 */
+
+/* 修改内容盒子的样式 */
+#content-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    padding: 0 100px;
+}
+
+.content-box {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* 子元素在交叉轴上顶部对齐 */
+    margin-bottom: 20px; /* 内容盒子之间的间距 */
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    height: 300px; /* 所有内容盒子高度一致 */
+}
+
+/* 为左右两栏设置样式 */
+.content-box .column {
+    flex: 1;
+    padding: 10px;
+}
+
+.content-box .column.left {
+    flex-basis: 40%; /* 左边栏宽度小一些 */
+}
+
+.content-box .column.right {
+    flex-basis: 60%; /* 右边栏宽度大一些 */
+}
+
+/* 为区域1和区域3添加照片和说明文字 */
+#container_1 .column img,
+#container_3 .column img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* 为区域2添加说明文字和照片 */
+#container_2 .column img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-left: auto; /* 将照片推向右侧 */
+}
+
+/* 添加分栏符样式 */
+.column:not(:last-child) {
+    border-right: 1px solid #ccc; /* 在非最后一个列的右侧添加边框 */
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}

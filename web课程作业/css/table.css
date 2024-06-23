@@ -1,0 +1,131 @@
+/* 重置浏览器默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: url(../images/背景图.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+header#header {
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav#nav {
+    
+    color: #fff;
+}
+
+nav#nav .inner ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+nav#nav .inner ul li {
+    margin: 0 10px;
+}
+
+nav#nav .inner ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px
+}
+
+nav#nav .inner ul li a:hover {
+    text-decoration: underline;
+}
+
+.resume {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px #ccc;
+    background-color: white;
+}
+.profile {
+    float: left; /* 使照片和文本并排 */
+    margin-right: 20px; /* 照片与文本之间的间距 */
+}
+
+.personal-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile-picture-wrapper {
+    flex: 0 0 auto; /* 防止flex项目缩小 */
+}
+
+
+.profile-picture {
+    width: 150px; /* 照片宽度 */
+    height: 150px; /* 照片高度 */
+    border-radius: 50%; /* 圆形照片 */
+    border: 3px solid #ccc; /* 照片边框 */
+}
+
+/* 清除浮动 */
+.personal-info::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+section {
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.personal-info p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}

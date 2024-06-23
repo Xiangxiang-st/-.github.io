@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的网页</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <header id="header">
+        <div class="inner">
+            <!-- 这里可以添加网站的logo或者标题 -->
+            <h1>去更远的地方，见更远的光</h1>
+        </div>
+    </header>
+
+    <nav id="nav">
+        <div class="inner">
+            <!-- 这里可以添加导航链接 -->
+            <ul>
+                <li><a href="./index.html">首页</a></li>
+                <li><a href="./html/个人简历.html">个人简历</a></li>
+                <li><a href="./html/兴趣爱好.html">兴趣爱好</a></li>
+                <li><a href="./html/生活感悟.html">生活感悟</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="content-wrapper">
+        <div id="container_1" class="content-box two-column">
+            <div class="column left">
+                <h2 class="welcome-title">欢迎来到我的Web网页</h2>
+            </div>
+            <div class="column right">
+                <h2>个人照片和介绍</h2>
+                <img src="./images/个人照片.jpg" alt="个人照片" class="profile-picture">
+                <p>我是马彩芬，一名信管专业在校大二学生。欢迎访问我的个人网站</p>
+            </div>
+        </div>
+        <div id="container_2" class="content-box two-column">
+            <div class="column left">
+                <h2 class="vertical-title">我的相册</h2>
+            </div>
+            <div class="column right">
+                <div class="photo-carousel">
+                    <!-- 照片轮播 -->
+                    <img src="./images/照片1.jpg" alt="照片1" class="carousel-photo">
+                    <img src="./images/照片2.jpg" alt="照片2" class="carousel-photo">
+                    <img src="./images/照片3.jpg" alt="照片3" class="carousel-photo">
+                    <img src="./images/照片4.jpg" alt="照片4" class="carousel-photo">
+                    <img src="./images/照片5.jpg" alt="照片5" class="carousel-photo">
+                    <img src="./images/照片6.jpg" alt="照片6" class="carousel-photo">
+                    <!-- 更多照片 -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact-form-wrapper">
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">姓名：</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">邮箱：</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">留言：</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">提交</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>薯条版权所有 &copy; 2024 我的网站</p>
+    </footer>
+</body>
+</html>

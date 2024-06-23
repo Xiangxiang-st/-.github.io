@@ -1,0 +1,190 @@
+/* 重置浏览器默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: url(../images/背景图.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+header#header {
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav#nav {
+    
+    color: #fff;
+}
+
+nav#nav .inner ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+nav#nav .inner ul li {
+    margin: 0 10px;
+}
+
+nav#nav .inner ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px
+}
+
+nav#nav .inner ul li a:hover {
+    text-decoration: underline;
+}
+
+#container_1, #container_2 {
+    padding: 2rem;
+    height: 300px;
+    background: #f4f4f4;
+    margin: 1rem 0;
+}
+#content-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.content-box {
+    display: flex;
+    margin-bottom: 20px;
+    position: relative; /* 为分隔线定位 */
+    justify-content: space-between;
+}
+
+.column {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* 调整两栏的宽度比例 */
+#container_1 .column {
+    flex: 1; /* 两栏平分空间 */
+}
+
+#container_2 .column.left {
+    flex: 1; /* 左边栏小一点 */
+}
+
+#container_2 .column.right {
+    flex: 3; /* 右边栏大一点 */
+}
+
+.column:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 10px;
+    height: 100%;
+    background-color: #62c7e6; /* 栏分隔线颜色 */
+}
+
+.left {
+    align-items: flex-start; /* 左对齐 */
+}
+
+.right {
+    text-align: center;
+}
+
+.welcome-title {
+    font-size: 50px; /* 大标题字体大小 */
+}
+
+.profile-picture {
+    width: 150px; /* 个人照片宽度 */
+    height: 150px; /* 个人照片高度 */
+    border-radius: 50%; /* 圆形照片 */
+    margin-bottom: 10px;
+}
+
+.vertical-title {
+    writing-mode: vertical-rl; /* 文字竖排 */
+    transform: rotate(180deg);
+    text-orientation: mixed;
+    margin: 0; /* 如果需要，添加额外的样式 */
+    padding: 10px; /* 添加内边距 */
+    background-color: #f0f0f0; /* 添加背景色，如果需要 */
+    writing-mode: sideways-right; /* 修正文字方向 */
+    transform: rotate(0deg);
+}
+
+.photo-carousel {
+    display: flex;
+    overflow-x: auto; /* 水平滚动 */
+    scroll-snap-type: x mandatory;
+}
+
+.carousel-photo {
+    width: 100%;
+    max-width: 150px; /* 单张照片最大宽度 */
+    height: auto;
+    max-height: 200px;
+    flex-shrink: 0;
+    margin-right: 10px;
+    scroll-snap-align: center;
+    border: 1px solid #ccc; /* 照片边框 */
+}
+#contact-form-wrapper {
+    max-width: 500px; /* 表单最大宽度 */
+    margin: 20px auto; /* 水平居中 */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+    border-radius: 8px; /* 边框圆角 */
+    background: #fff; /* 背景颜色 */
+}
+
+.form-group {
+    margin-bottom: 15px; /* 组与组之间的间距 */
+}
+
+.form-group label {
+    display: block; /* 显示为块级元素 */
+    margin-bottom: 5px; /* 标签与输入框的间距 */
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%; /* 输入框宽度 */
+    padding: 10px; /* 输入框内边距 */
+    border: 1px solid #ccc; /* 输入框边框 */
+    border-radius: 4px; /* 输入框圆角 */
+}
+
+.form-group button {
+    width: 100%; /* 按钮宽度 */
+    padding: 10px;
+    border: none; /* 无边框 */
+    border-radius: 4px;
+    background-color: #007bff; /* 按钮背景颜色 */
+    color: white; /* 字体颜色 */
+    cursor: pointer; /* 鼠标悬停时显示手形图标 */
+}
+
+.form-group button:hover {
+    background-color: #0056b3; /* 鼠标悬停时的背景颜色 */
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
